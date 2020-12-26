@@ -1,1 +1,5 @@
-pyautogui
+
+1. Python3 or above 
+2. Selenium must be installed on your system 
+3. ChromeDriverManager must be installed on the system 
+

@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-driver = webdriver.Chrome()
+driver = webdriver.Chrome('/usr/local/bin/Chromedriver')
 driver.get("https://web.whatsapp.com/")
 
 name = input("Enter the contact or Group name: ")
@@ -11,7 +11,7 @@ input("\n\tPress enter after scanning the qr code")
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
 
-msg_box = driver.find_element_by_class_name('_1awRl copyable-text selectable-text')
+msg_box = driver.find_element_by_class_name('<class name>')      #chat box class name obtained using inspect element
 msg_box.click()
 
 for i in range(count):
