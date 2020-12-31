@@ -11,7 +11,7 @@ input("\n\tPress enter after scanning the qr code")
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
 
-msg_box = driver.find_element_by_class_name('<class name>')      #chat box class name obtained using inspect element
+msg_box = driver.find_element_by_xpath('//div[@class="_1awRl copyable-text selectable-text"][@contenteditable="true"][@data-tab="6"]')   
 msg_box.click()
 
 for i in range(count):
